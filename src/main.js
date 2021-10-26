@@ -18,6 +18,11 @@ Vue.config.productionTip = false;
 import vueHljs from "vue-hljs";
 import hljs from "highlight.js";
 
+import { abilitiesPlugin } from '@casl/vue';
+import ability from './services/ability';
+Vue.use(abilitiesPlugin, ability, {
+  useGlobalProperties: true
+});
 
 //use
 Vue.use(vueHljs, { hljs });

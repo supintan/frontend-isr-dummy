@@ -12,6 +12,9 @@
           voluptatibus. Odio, inventore?
         </p>
       </template>
+      <div v-if="$can('create', 'user')">
+        Test Create Users
+      </div>
     </BaseCard>
   </div>
 </template>
